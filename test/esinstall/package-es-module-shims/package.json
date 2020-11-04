@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "version": "1.0.1",
+  "name": "@snowpack/test-package-es-module-shims",
+  "description": "Ensures es-module-shims works",
+  "scripts": {
+    "testinstall": "snowpack"
+  },
+  "snowpack": {
+    "install": [
+      "es-module-shims"
+    ],
+    "buildOptions": {
+      "minify": false
+    }
+  },
+  "dependencies": {
+    "es-module-shims": "^0.7.1"
+  },
+  "devDependencies": {
+    "snowpack": "^2.14.3"
+  }
+}
